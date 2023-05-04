@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!--logo img-->
+    <div class="nav" id="nav">
+        <img src="images/netflix-logo.png" alt="" class="nav__logo">
+        <img src="images/netflix-avatar.png" alt="" class="nav__avatar">
+    </div>
+
     <!--back img-->
     <div class="banner">
         <div class="banner__contents">
@@ -21,6 +27,7 @@
             recurits a band of eight robers who have a single chareteristic :n...
         </div>
         </div>
+        <div class="banner__fadebottom"></div>
     </div>
     
     <!--Netflix Original-->
@@ -213,6 +220,19 @@
             <img src="images/small-movie8.jpg" alt="" class="row__poster ">
             </div>
     </div>
+
+    <script>
+        const nav=document.getElementById('nav')
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >=100){
+                nav.classList.add('nav__black');
+            } else {
+                nav.classList.remove('nav__black');
+
+            }
+        });
+    </script>
 
 </body>
 </html>
